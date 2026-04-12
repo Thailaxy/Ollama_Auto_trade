@@ -1,33 +1,33 @@
 # Import necessary libraries
 import streamlit as st
-import torch
-from transformers import OllamaForConditionalGeneration, OllamaTokenizer
+import ollama
 
 # Function to chat with the local Ollama model
-def chat_with_ollama(model_name, prompt):
-    # Load the pre-trained Ollama model and tokenizer
-    tokenizer = OllamaTokenizer.from_pretrained(model_name)
-    model = OllamaForConditionalGeneration.from_pretrained(model_name)
-
-# Function to generate text
-def generate_text(prompt):
-    global tokenizer  # Define the tokenizer variable here
-    # Preprocess the input prompt
-    inputs = tokenizer.encode(prompt, return_tensors='pt')
-
-# Generate text using the Ollama model
-def generate_text_with_ollama(model_name, prompt):
-    # Load the pre-trained Ollama model and tokenizer
-    tokenizer = OllamaTokenizer.from_pretrained(model_name)
-    model = OllamaForConditionalGeneration.from_pretrained(model_name)
-
-# Main function
 def main():
     # Get user input
-    prompt = st.text_input('Enter your prompt')
+    model_name = st.sidebar.selectbox('Model Name', ['llama3.1:8b'])
+    prompt = st.text_area('System Prompt')
+    clear_chat_button = st.button('Clear Chat')
+
+    if clear_chat_button:
+        st.session_state['chat_history'] = []
+
+    chat_input = st.chat_input()
+    chat_message = st.chat_message()
 
     # Generate text using the Ollama model
-    generated_text = generate_text_with_ollama('ollama-base', prompt)
+    def generate_text():
+        response = ollama.chat(model_name, prompt)
+        return response
 
     # Display the generated text
-    st.write('Generated Text: ' + generated_text)
+    if st.button('Generate Text'):
+        response = generate_text()
+        st.write('Generated Text: ' + str(response))
+
+    # Store chat history in session state
+    st.session_state['chat_history'].append(chat_input)
+
+# Main function
+if __name__ == '__main__':
+    main()
