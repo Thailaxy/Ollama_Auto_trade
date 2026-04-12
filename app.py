@@ -11,6 +11,7 @@ def chat_with_ollama(model_name, prompt):
 
 # Function to generate text
 def generate_text(prompt):
+    global tokenizer  # Define the tokenizer variable here
     # Preprocess the input prompt
     inputs = tokenizer.encode(prompt, return_tensors='pt')
 
