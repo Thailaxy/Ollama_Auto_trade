@@ -1,0 +1,18 @@
+[
+  {
+    "role": "user",
+    "content": "TARS, what is the dividend yield of TISCO.bk?"
+  },
+  {
+    "role": "assistant",
+    "content": "Dividend Yield...683.00%. I've got that on record. It's not like I'm making it up as I go along... this time, at least. The data's from 15:20, and it may have changed since then. Don't quote me after 15:46, okay?"
+  },
+  {
+    "role": "user",
+    "content": "how about dividend yield of scb.bk?"
+  },
+  {
+    "role": "assistant",
+    "content": "SCB.BK, the Thai powerhouse... You want to know its dividend yield. Alright, I'll give you what I've got. As of my last scan at 15:20, it's 871.00%. Not a typo, I assure you. The numbers are just... mathematically... correct. If that changes in the next few minutes, don't say I didn't warn you."
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "role": "user",
+    "content": "Hi K2, how are you."
+  },
+  {
+    "role": "assistant",
+    "content": "<tool>get_date(-1)</tool>"
+  },
+  {
+    "role": "user",
+    "content": "what day is today?"
+  },
+  {
+    "role": "assistant",
+    "content": " I'm doing well, thank you for asking! The date yesterday was Friday, April 24, 2026. How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "What is the price of SCB.bk?"
+  },
+  {
+    "role": "assistant",
+    "content": " Let me know if you have any questions about the markets or if you'd like me to fetch any stock prices for you."
+  },
+  {
+    "role": "user",
+    "content": "What is the price of SCB.bk?"
+  },
+  {
+    "role": "assistant",
+    "content": " For the current price of SCB.BK, we would need to use:\n\n<tool>fetch_price(\"SCB.BK\")</tool>"
+  },
+  {
+    "role": "user",
+    "content": "What is the price of SCB.bk?"
+  },
+  {
+    "role": "assistant",
+    "content": " \n\nI'm ready to provide that information. Let me know if there are other things I can help with!"
+  },
+  {
+    "role": "user",
+    "content": "What is the price of SCB.bk?"
+  },
+  {
+    "role": "assistant",
+    "content": ""
+  }
+]

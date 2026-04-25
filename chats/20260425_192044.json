@@ -1,0 +1,18 @@
+[
+  {
+    "role": "user",
+    "content": "K2, what is the day after tomorrow?"
+  },
+  {
+    "role": "assistant",
+    "content": "<TOOK_NOTE>\nThe human asked for the day after tomorrow.\n</TOOK_NOTE>\n\nTo find the day after tomorrow without guessing or calculating it myself, I will use the get_date tool to add 2 days from today's date.\n\n<OUTPUT><TOOL>get_date(2)</TOOL></OUTPUT>"
+  },
+  {
+    "role": "system",
+    "content": "RESULT: Monday, April 27, 2026"
+  },
+  {
+    "role": "assistant",
+    "content": "<TOOK_NOTE>\nThe human asked for the day after tomorrow.\n</TOOK_NOTE>\n\nTo find the day after tomorrow without guessing or calculating it myself, I will use the get_date tool to add 2 days from today's date.\n\n<OUTPUT><TOOL>get_date(2)</TOOL></OUTPUT>\n\n> 🤖 **Observed:** RESULT: Monday, April 27, 2026\n\nThe day after tomorrow is Monday, April 27, 2026."
+  }
+]

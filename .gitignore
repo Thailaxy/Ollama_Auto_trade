@@ -1,0 +1,9 @@
+.env
+watchlist.json
+trade_history.csv
+paper_trades.csv
+agent_notes.md
+__pycache__/
+*.pyc
+venv/
+.aider*

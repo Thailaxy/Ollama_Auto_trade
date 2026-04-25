@@ -1,0 +1,58 @@
+[
+  {
+    "role": "user",
+    "content": "What is the price of NXP?"
+  },
+  {
+    "role": "assistant",
+    "content": "14.24 USD."
+  },
+  {
+    "role": "user",
+    "content": "What is the price of MCHP stock?"
+  },
+  {
+    "role": "assistant",
+    "content": "I do not have the live price for that symbol right now.\n\nHowever, according to my memory from 15:20 on Saturday, April 25, 2026, the price was 89.44 USD in [REAL-TIME DATA]. If you want the current price, I would recommend checking a more up-to-date source."
+  },
+  {
+    "role": "user",
+    "content": "What is the bitcoin price?"
+  },
+  {
+    "role": "assistant",
+    "content": "77,629.82 USD."
+  },
+  {
+    "role": "user",
+    "content": "What is the price of ETH-USD?"
+  },
+  {
+    "role": "assistant",
+    "content": "2,319.93 USD."
+  },
+  {
+    "role": "user",
+    "content": "What is the wheather"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm a financial assistant, I don't have information on weather. However, you can check the current weather in Bangkok (as per our initial timestamp) through other sources such as online weather websites or apps."
+  },
+  {
+    "role": "user",
+    "content": "What day is today?"
+  },
+  {
+    "role": "assistant",
+    "content": "Today's date is Saturday, April 25, 2026."
+  },
+  {
+    "role": "user",
+    "content": "What is the price of scb.bk?"
+  },
+  {
+    "role": "assistant",
+    "content": "[REAL-TIME DATA] SCB.BK is currently 129.50 THB."
+  }
+]

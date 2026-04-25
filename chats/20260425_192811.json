@@ -1,0 +1,18 @@
+[
+  {
+    "role": "user",
+    "content": "K2, what is the day after tomorrow?"
+  },
+  {
+    "role": "assistant",
+    "content": "<TOOL>get_date(2)</TOOL>"
+  },
+  {
+    "role": "system",
+    "content": "RESULT: Monday, April 27, 2026"
+  },
+  {
+    "role": "assistant",
+    "content": "<TOOL>get_date(2)</TOOL>\n\n> 🤖 **Observed:** RESULT: Monday, April 27, 2026\n\nMonday, April 27, 2026"
+  }
+]
