@@ -62,8 +62,8 @@ import ollama
 # Configuration
 LOG_FILE = "trade_history.csv"
 WATCHLIST_FILE = "price_alert_bot/watchlist.json"
-TOKEN = "8658926505:AAGdJcNJ38CHkEjdCZfndN5xDzNFXe98lD0" # From your notifiers.py
-CHAT_ID = "6128986691"
+TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 last_update_id = 0
 
 def get_tars_reply(user_msg):
